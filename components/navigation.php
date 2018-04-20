@@ -1,7 +1,7 @@
 <?php
 $navi = array(
     'index.html' => 'Home',
-    '' => '',
+    'recommendations.html' => 'Recommendations',
     '' => '',
     '' => '',
 );

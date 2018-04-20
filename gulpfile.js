@@ -5,7 +5,8 @@ var config = {
         'less/settings.less',
         'less/base.less',
         'less/elements/header.less',
-        'less/elements/navigation.less'
+        'less/elements/navigation.less',
+        'less/elements/box.less'
     ],
     js: [
         'js/project.js',
