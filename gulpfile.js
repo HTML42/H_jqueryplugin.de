@@ -42,7 +42,12 @@ var imageminPngquant = require('imagemin-pngquant');
 var imageminZopfli = require('imagemin-zopfli');
 var imageminGiflossy = require('imagemin-giflossy');
 var imageminGuetzli = require('imagemin-guetzli');
-gulp.task('default', ['clean', 'less', 'js', 'images'], function () {
+gulp.task('default', ['clean'], function () {
+    gulp.start('default2');
+});
+gulp.task('default2', ['images'], function () {
+    gulp.start('less');
+    gulp.start('js');
     console.log('Assets built!');
 });
 
@@ -103,7 +108,7 @@ gulp.task('js', function () {
 });
 //
 gulp.task('css-min', function () {
-    return gulp.src('./assets/css/*.css')
+    return gulp.src('./assets/css/styles.css')
             .pipe(concat('styles.min.css'))
             .pipe(minifyCSS())
             .pipe(gulp.dest('./assets/css/'));

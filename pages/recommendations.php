@@ -26,15 +26,30 @@
     <?= Html::link('https://github.com/blueimp/jQuery-File-Upload', 'To Plugin', array('target' => '_blank', 'rel' => 'nofollow')) ?>
 </div>
 
-<!--
 <div class="box">
-    <h2></h2>
-    <p></p>
-    <?= Html::link('', 'To Plugin', array('target' => '_blank', 'rel' => 'nofollow')) ?>
+    <h2>jQuery-Image-Gallery</h2>
+    <p>Jssor supports all devices.</p>
+    <?= Html::link('https://www.jssor.com/', 'To Plugin', array('target' => '_blank', 'rel' => 'nofollow')) ?>
 </div>
--->
+
+<div class="box">
+    <h2>jQuery-Easy-Tabs</h2>
+    <p>EasyTabs is a lightweight jQuery plugin to provide full tab functionality, while leaving the styling up to you.</p>
+    <?= Html::link('https://os.alfajango.com/easytabs/', 'To Plugin', array('target' => '_blank', 'rel' => 'nofollow')) ?>
+</div>
+
+
+<?php /*
+  <div class="box">
+  <h2></h2>
+  <p></p>
+  <?= Html::link('', 'To Plugin', array('target' => '_blank', 'rel' => 'nofollow')) ?>
+  </div>
+ */ ?>
 
 <hr class="seperator"/>
 
-<h3>Self-Written jQuery-Functions</h3>
-<?= Html::link('functions.html', 'Functions-Overview') ?>
+<div class="box">
+    <h2>Self-Written jQuery-Functions</h2>
+    <?= Html::link('functions.html', 'Functions-Overview') ?>
+</div>

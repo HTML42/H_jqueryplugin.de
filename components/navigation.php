@@ -2,8 +2,7 @@
 $navi = array(
     'index.html' => 'Home',
     'recommendations.html' => 'Recommendations',
-    '' => '',
-    '' => '',
+    'xtreme_jquery.html' => 'Xtreme-jQuery'
 );
 ?>
 <div id="navi_toggler"></div>
