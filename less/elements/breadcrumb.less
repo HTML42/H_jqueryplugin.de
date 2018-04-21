@@ -1,0 +1,33 @@
+@breadcrumb_color: @color_grey_dark;
+.breadcrumb {
+    .clean_list();
+    .clear_after();
+    margin-bottom: @distance_normal;
+    li {
+        position: relative;
+        float: left;
+        a {
+            color: @breadcrumb_color;
+            &.active {
+                font-weight: 700;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+        + li {
+            margin-left: @distance_big;
+            &:before {
+                content: '';
+                transform: rotate(-45deg);
+                border-right: 1px solid @breadcrumb_color;
+                border-bottom: 1px solid @breadcrumb_color;
+                height: 5px;
+                width: 5px;
+                position: absolute;
+                top: 5px;
+                left: -25px;
+            }
+        }
+    }
+}
